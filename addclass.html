@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" href="style.css"> <!-- Gunakan CSS utama -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="addclass.js"></script>
+</head>
+<body>
+
+    <body class="admin-addclass">
+        <!-- Navbar -->
+        <div class="navbar">
+            <h2 class="logo">Admin Panel</h2>
+            <a href="#" class="nav-link">Contact Us</a>
+            <button class="logout-btn">Logout</button>
+        </div>
+    
+        <div class="main-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <a href="adminmainpage.html">Home</a>
+                <a href="addclass.html" class="active">Add Course</a>
+                <a href="adminclass.html">All Course</a>
+                <a href="adminstudent.html">All Student</a>
+            </div>
+
+        <!-- Konten Utama -->
+        <div class="content">
+            <div class="form-container">
+                <h1>Add New Course</h1>
+                <form id="course-form">
+                    <label for="course-name">Nama Course (Judul)</label>
+                    <input type="text" id="course-name" placeholder="Nama Course">
+
+                    <label for="description">Deskripsi Course</label>
+                    <textarea id="description" placeholder="Deskripsi"></textarea><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="thumbnail">Image Thumbnail</label>
+                            <input type="file" id="thumbnail" accept="image/*"><br>
+                        </div>
+                        <div class="col">
+                            <label for="video-header">Video Header</label>
+                            <input type="file" id="video-header" accept="video/*"><br>
+                        </div>
+                    </div><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="video-core">Video Core File</label>
+                            <input type="file" id="video-core" accept="video/*"><br>
+                        </div>
+                        <div class="col">
+                            <label for="price">Price</label>
+                            <input type="text" id="price" placeholder="Price"><br>
+                        </div>
+                    </div>
+
+                    <button class="button-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

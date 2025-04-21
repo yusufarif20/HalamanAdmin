@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Class</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+    
+    <!-- Your scripts -->
+    <script src="firebase-config.js"></script>
+    <script src="adminclass.js"></script>
+</head>
+<body class="admin-dashboard">
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2 class="logo">Admin Panel</h2>
+        <a href="#" class="nav-link">Contact Us</a>
+        <button class="logout-btn">Logout</button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="adminmainpage.html">Home</a>
+            <a href="addclass.html">Add Course</a>
+            <a href="adminclass.html"class="active">All Course</a>
+            <a href="adminstudent.html">All Student</a>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <h1>All course</h1>
+
+            <!-- Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Thumbnail</th>
+                        <th>Video Core</th>
+                        <th>Video Header</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

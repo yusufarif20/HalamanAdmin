@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-home">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="nav-btn">Admin Panel</button>
+        <button class="nav-btn"onclick="goToLogin()">Chat Pelanggan</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1><strong>Welcome To</strong></h1>
+        <h2>Codeing Class [Admin]</h2>
+        <p>Manage your <strong>course!</strong></p>
+
+        <button class="btn" onclick="goToLogin()">Login</button>
+    </div>
+    <script>
+        function goToChat() {
+            window.location.href = "chatbot.html"; 
+        }
+        function goToLogin() {
+            window.location.href = "login.html"; 
+        }
+        function goToRegister() {
+            window.location.href = "indexafterlogin.html"; 
+        }
+    </script>
+</body>
+</html>
