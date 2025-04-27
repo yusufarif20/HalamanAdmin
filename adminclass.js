@@ -23,9 +23,21 @@ function fetchCourseData() {
                     <td>${course.name || ''}</td>
                     <td>${course.description || ''}</td>
                     <td>${course.price || ''}</td>
-                    <td><a href="${course.thumbnailUrl || '#'}" target="_blank">View Thumbnail</a></td>
-                    <td><a href="${course.videoCoreUrl || '#'}" target="_blank">View Video Core</a></td>
-                    <td><a href="${course.videoHeaderUrl || '#'}" target="_blank">View Video Header</a></td>
+                    <td>
+                        <button onclick="window.open('${course.thumbnailUrl || '#'}', '_blank')" class="view-btn">
+                            Thumbnail
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="window.open('${course.videoCoreUrl || '#'}', '_blank')" class="view-btn">
+                            Video Core
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="window.open('${course.videoHeaderUrl || '#'}', '_blank')" class="view-btn">
+                            Video Header
+                        </button>
+                    </td>
                     <td>
                         <button class="edit-btn" data-id="${courseId}">Edit</button>
                         <button class="delete-btn" data-id="${courseId}">Delete</button>

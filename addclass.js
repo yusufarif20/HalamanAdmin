@@ -37,20 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             alert("Course berhasil ditambahkan!");
-            form.reset(); // Kosongkan input setelah sukses
+            form.reset(); 
         } catch (error) {
             console.error("Gagal menyimpan:", error);
             alert("Terjadi kesalahan, coba lagi.");
         }
     });
 
-    // Fungsi untuk upload file ke Cloudinary
     async function uploadToCloudinary(file, resourceType) {
         const formData = new FormData();
         formData.append("file", file);
-        formData.append("upload_preset", "my_preset"); // Ganti dengan Upload Preset Cloudinary
-        formData.append("cloud_name", "ddu9nn95b"); // Ganti dengan Cloud Name kamu
-        formData.append("resource_type", resourceType); // "image" atau "video"
+        formData.append("upload_preset", "my_preset"); 
+        formData.append("cloud_name", "ddu9nn95b");
+        formData.append("resource_type", resourceType); 
 
         const response = await fetch(`https://api.cloudinary.com/v1_1/ddu9nn95b/${resourceType}/upload`, {
             method: "POST",

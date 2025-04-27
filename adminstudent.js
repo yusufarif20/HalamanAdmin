@@ -25,6 +25,9 @@ function fetchUserData() {
             <td>${user.firstName || ''} ${user.lastName || ''}</td>
             <td>${user.phone || ''}</td>
             <td>${user.email || ''}</td>
+            <td>${user.referral || ''}</td>
+            <td>${user.city || ''}</td>
+            <td>${user.createdAt || ''}</td>
             <td><button class="delete-btn" data-id="${userId}">Delete</button></td>
           `;
           

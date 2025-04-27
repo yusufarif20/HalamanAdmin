@@ -32,25 +32,41 @@
 
         <!-- Content Area -->
         <div class="content">
-            <h1>Welcome To</h1>
-            <h2>Codeing Class <br> <span>[Admin Panel]</span></h2>
-            <p>Hallo !! <strong>ADMIN</strong></p>
-
-            <!-- Table -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>User ID</th>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Email</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Data will be inserted here by JavaScript -->
-                </tbody>
-            </table><br>
+            <!-- Improved Header Section -->
+            <div class="dashboard-header">
+                <div class="header-content">
+                    <h1 class="dashboard-title">Welcome to Codeing Class</h1>
+                    <h2 class="dashboard-subtitle">Administration Panel</h2>
+                    <div class="admin-greeting">
+                        <p>Hello, <span class="admin-name">ADMIN</span></p>
+                        <div class="header-actions">
+                            <button class="refresh-btn">
+                                <i class="fas fa-sync-alt"></i> Refresh Data
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Table Section -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Referral</th>
+                            <th>City</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
             <div class="user-container"></div>
         </div>
     </div>
